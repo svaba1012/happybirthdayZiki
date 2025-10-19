@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
@@ -64,7 +64,7 @@ body {
   border-radius: 3px;
   bottom: -50px;
   color: #fff;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   position: absolute;
   right: 5px;
 }
@@ -86,14 +86,15 @@ body {
   font-size: 4rem;
 }
 
-.idea-5 span, .idea-6 span, .wish-hbd span {
+.idea-5 span,
+.idea-6 span,
+.wish-hbd span {
   display: inline-block;
 }
 
-.idea-6 span{
+.idea-6 span {
   font-size: 15rem;
 }
-
 
 .six {
   position: relative;
@@ -102,18 +103,29 @@ body {
 }
 
 .six img {
-  display: inline-block;
-  height: 350px;
+  /* display: inline-block; */
+  max-height: 350px;
   max-width: 100%;
   /* height: auto; */
 }
 
-.six .hat {
-  left: 41.5%;
+.six div {
+  display: inline-block;
+  width: fit-content;
+  position: relative;
+  /* height: auto; */
+}
+
+.six div .hat {
+  left: 38%;
   position: absolute;
   /* transform: scale(0.1); */
-  top: -35%;
-  width: 80px;
+  top: 14%;
+  width: 35px;
+}
+
+.six .wish {
+  width: 100%;
 }
 
 .baloons img {
@@ -133,7 +145,8 @@ body {
   left: 30%;
 }
 
-.seven, .eight {
+.seven,
+.eight {
   height: 100vh;
   position: fixed;
   top: 0;
@@ -226,31 +239,18 @@ body {
 }
 
 /* Media Queries */
-@media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
+
+@media screen and (max-width: 600px) {
+  .wish-hbd {
+    font-size: 2.2em;
+  }
+
+  .wish h5 {
+    font-size: 1.4rem;
   }
 }
 
-@media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
-  }
-}
-
-@media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
   .container {
     width: 90%;
   }
@@ -263,7 +263,9 @@ body {
     bottom: -38px;
     right: 5px;
   }
+}
 
+@media screen and (max-width: 500px) {
   .idea-5 span {
     display: block;
   }
@@ -272,21 +274,79 @@ body {
     font-size: 10rem;
   }
 
-  .six .hat {
-    /* top: -20px; */
-    width: 50px;
-  }
-
-  .wish-hbd {
-    font-size: 2.2em;
-  }
-
-  .wish h5 {
-    font-size: 1.4rem;
-  }
-
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wish-hbd {
+    font-size: 1.8em;
+  }
+
+  .wish h5 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .wish-hbd {
+    font-size: 1.4em;
+  }
+
+  .wish h5 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .wish-hbd {
+    font-size: 1.2em;
+  }
+
+  .wish h5 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .six div .hat {
+    top: 13.5%;
+    width: 32px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .six div .hat {
+    top: 13%;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .six div .hat {
+    top: 12.5%;
+    width: 28px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .six div .hat {
+    top: 12%;
+    width: 26px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .six div .hat {
+    top: 11.5%;
+    width: 24px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .six div .hat {
+    top: 11%;
+    width: 22px;
   }
 }
