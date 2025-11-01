@@ -14,7 +14,7 @@ body {
 .container {
   height: 100vh;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
   text-align: center;
   visibility: hidden;
@@ -41,13 +41,16 @@ body {
   font-size: 3rem;
 }
 
+.four {
+  margin: 10px;
+}
+
 .four .text-box {
   border: 3px solid #aaa;
   border-radius: 5px;
   margin: 0 auto;
   padding: 10px;
   position: relative;
-  width: 600px;
 }
 
 .text-box p {

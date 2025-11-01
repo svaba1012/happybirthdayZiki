@@ -1,21 +1,22 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener("load", () => {
-  Swal.fire({
-    title: "Да ли хоћеш да пустиш музику у позадини?",
-    icon: "warning",
-    showCancelButton: true,
-    confirmButtonColor: "#3085d6",
-    cancelButtonColor: "#d33",
-    confirmButtonText: "Да",
-    cancelButtonText: "Не",
-  }).then((result) => {
-    if (result.isConfirmed) {
-      document.querySelector(".song").play();
-      animationTimeline();
-    } else {
-      animationTimeline();
-    }
-  });
+  animationTimeline();
+  // Swal.fire({
+  //   title: "Да ли хоћеш да пустиш музику у позадини?",
+  //   icon: "warning",
+  //   showCancelButton: true,
+  //   confirmButtonColor: "#3085d6",
+  //   cancelButtonColor: "#d33",
+  //   confirmButtonText: "Да",
+  //   cancelButtonText: "Не",
+  // }).then((result) => {
+  //   if (result.isConfirmed) {
+  //     document.querySelector(".song").play();
+  //     animationTimeline();
+  //   } else {
+  //     animationTimeline();
+  //   }
+  // });
 });
 
 // animation timeline
